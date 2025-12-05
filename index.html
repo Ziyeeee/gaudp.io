@@ -110,6 +110,68 @@
   </div>
 </section>
 
+<!-- pic-->
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <div class="columns is-centered has-text-centered">
+        <h2 class="title is-3">Motivation</h2>
+      </div>
+      <img src="static\images\motivation.svg"  alt="MY ALT TEXT"/>
+        <div class="content has-text-justified">
+          <p>
+          Both local and global context are essential in multi-agent collaboration. Comparison of
+multi-agent decision-making using different types of contextual information. (a) Using only local
+context leads to miscoordination such as collisions due to lack of global awareness. (b) Using only
+global context provides a holistic scene view but lacks detailed local features, resulting in inaccurate
+control, such as biased localization. (c) Our proposed method, GauDP, fuses global context, which
+is reconstructed from 2D local images via a shared 3D Gaussian representation, on top of local
+observations. This integration enables both accurate localization and coordinated execution. Our
+proposed method, based solely on 2D observations, effectively aggregates global context on top of
+the local context.
+          </p>
+        </div>
+    </div>
+  </div>
+</section>
+
+<!-- Teaser video-->
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+      <div class="columns is-centered has-text-centered">
+        <h2 class="title is-3">Real World Demos</h2>
+      </div>
+      <div class="columns is-multiline is-centered">
+        <div class="column is-4">
+          <video poster="" id="tree" autoplay controls muted loop height="100%">
+            <source src="static/videos/Card_Box_Stacking.mp4"
+            type="video/mp4">
+          </video>
+          <p class="subtitle is-size-6 has-text-centered">
+            Card Box Stacking
+          </p>
+        </div>
+        <div class="column is-4">
+          <video poster="" id="tree" autoplay controls muted loop height="100%">
+            <source src="static/videos/Card_Box_Handover.mp4"
+            type="video/mp4">
+          </video>
+          <p class="subtitle is-size-6 has-text-centered">
+            Card Box Handover
+          </p>
+        </div>
+        <div class="column is-4">
+          <video poster="" id="tree" autoplay controls muted loop height="100%">
+            <source src="static/videos/Grab_Roller.mp4"
+            type="video/mp4">
+          </video>
+          <p class="subtitle is-size-6 has-text-centered">
+            Grab Roller
+          </p>
+        </div>
+      </div>
+  </div>
+</section>
 
 <section class="section">
   <div class="container is-max-desktop">
@@ -143,6 +205,84 @@
       </div>
     </div>
     <!--/ Abstract. -->
+  </div>
+</section>
+
+<!-- Method Overview -->
+ <section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <div class="columns is-centered has-text-centered">
+        <h2 class="title is-3"> Method Overview</h2>
+      </div>
+      <img src="static/images/method2.svg" alt="MY ALT TEXT" style="width:80%; display:block; margin:0 auto;"/>
+        <div class="content has-text-justified">
+          <p>
+<strong>(a)</strong> Overview of the proposed <strong> GauDP </strong> framework for multi-agent imitation learning. Each
+agent extracts a local context from its 2D observation. A shared 3D Gaussian field is constructed
+from all views to form the global context, which is fused with the local context and passed through
+an encoder. The resulting per-agent features are processed by a diffusion policy via cross-attention
+to predict actions. <strong>(b)</strong> Pipeline for constructing the global Gaussian field. Multi-view images are
+encoded and aggregated via cross-attention, followed by a reconstruction loss Lrec between rendered
+and input views to ensure consistency.
+
+          </p>
+        </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- Quantitative Comparison 
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <div class="columns is-centered has-text-centered">
+        <h2 class="title is-3">Quantitative Comparison of 3D Gaussian Reconstruction</h2>
+      </div>
+      <img src="static\images\Reconstruction Results Table.png" alt="MY ALT TEXT"/>
+    </div>
+  </div>
+</section> -->
+
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <div class="columns is-centered has-text-centered">
+        <h2 class="title is-3"> Visualization of Reconstruction Results</h2>
+      </div>
+      <img src="static\images\Reconstruction Results.svg" alt="MY ALT TEXT" style="width:80%; display:block; margin:0 auto;"/>
+        <!--<div class="content has-text-justified">
+          <p>
+            <strong> Visualization of Reconstruction Results. </strong> Our method achieves significantly improved reconstruction quality.
+
+          </p>
+        </div> -->
+    </div>
+  </div>
+</section>
+
+<!--Simulation and Real-World Performance -->
+
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <div class="columns is-centered has-text-centered">
+        <h2 class="title is-3">Simulation Performance</h2>
+      </div>
+      <img src="static/images/simulation result.png" alt="MY ALT TEXT"/>
+    </div>
+  </div>
+</section>
+
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <div class="columns is-centered has-text-centered">
+        <h2 class="title is-3">Real-World Performance</h2>
+      </div>
+      <img src="static/images/realworld result.png" alt="MY ALT TEXT"/>
+    </div>
   </div>
 </section>
 
